@@ -1,0 +1,133 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: greenyellow;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Main form styles */
+  .form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .input::placeholder {
+    color: lightgray;
+  }
+  
+  .list {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list li {
+    list-style-type: none;
+    padding: 15px;
+    border-top: dotted 1px darkgray;
+    position: relative;
+    font-family: cursive;
+  }
+  
+  .list li .fa-trash {
+    color: red;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .list li .fa-check-square {
+    color: green;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .list li .fa-arrow-up {
+    color: blue;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .list li.checked {
+    color: darkgray;
+    text-decoration: line-through;
+  }
+  
+  .list li.checked .fa-check-square {
+    color: darkgray;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .form {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .input {
+      font-size: 16px;
+    }
+  
+    .list li {
+      padding: 10px;
+    }
+  
+    footer {
+      font-size: 0.875rem;
+    }
+  }
+  
